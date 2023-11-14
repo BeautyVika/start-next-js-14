@@ -31,7 +31,7 @@ body {
 }
 
 :root {
-  --color-bg: #1f7922;
+  --color-bg: #515d51;
   --color-active: #0d8f05;
 }
 
@@ -82,4 +82,30 @@ main a {
 }
 main a:hover {
   text-decoration: underline;
+}
+
+.active {
+  color: var(--color-active);
+  cursor: default;
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form button, button, input[type="submit"] {
+  background-color: var(--color-active);
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+input[type="search"] {
+  padding: 0.5rem 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
 }
